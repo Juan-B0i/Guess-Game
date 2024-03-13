@@ -1,0 +1,15 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+
+# IDE/Editor specific
+.vscode/
+.idea/
+
+# Flask specific
+instance/
+
+# System/OS specific
+.DS_Store
+Thumbs.db

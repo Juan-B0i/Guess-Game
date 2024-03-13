@@ -1,0 +1,9 @@
+.pixel {
+    width: 20px; /* Ancho de cada píxel */
+    height: 20px; /* Altura de cada píxel */
+    display: inline-block;
+    border: 1px solid black; /* Borde negro para cada píxel */
+}
+.pixel.yellow {
+    background-color: yellow; /* Color de fondo amarillo para píxeles con valor 1 */
+}
