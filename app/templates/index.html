@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadrado Amarillo con CSS</title>
+    <title>Guess Game</title>
     <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="icon" href="/app/static/assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="pixel-container"></div>
-    <script src="../static/js/script.js"></script>
+    <div id="loader-container">
+        <div id="loader"></div>
+    </div>
+    <div id="pagina">
+        <audio autoplay loop>
+            <source src="../static/assets/audio-background.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <header>
+            <h1> </h1>
+        </header>
+        <div class="container">
+            <aside>
+                <div class="background-content">
+                    <p class="p-score">Score</p>
+                    <div class="score">
+                            <p>Acertadas: <span id="acertadas">0</span></p>
+                            <p>Perdidas: <span id="perdidas">0</span></p>
+                            <p>Intentos: <span id="intentos">0</span></p>
+                            <p>Total: <span id="total">0</span></p>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <div id="images" class="images">
+                    <img src="../static/assets/nave-default.png" id="nave-default" >
+                    <img src="../static/assets/azul.png" id="azul" style="display: none;">
+                    <img src="../static/assets/rojo.png" id="rojo" style="display: none;">
+                    <img src="../static/assets/verde.png" id="verde" style="display: none;">
+                </div>
+                <!--style="display: none;"-->
+                <input id="guess-number" class="guess-number" maxlength="100" type="number" name="numeros" required="" pattern="[0-9]+" min="0" max="100" placeholder="1-100">
+
+                <button id="new-number" class="new-number">New Number</button>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <script src="../static/js/script.js"></script>
+    </footer>
 </body>
 </html>
