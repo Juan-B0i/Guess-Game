@@ -1,15 +1,25 @@
+// Este evento se ejecuta cuando el DOM ha sido completamente cargado
 document.addEventListener("DOMContentLoaded", function() {
+    // Se utiliza setTimeout para ocultar el loader después de 2 segundos
     setTimeout(function() {
+        // Ocultar el contenedor del loader
         document.getElementById("loader-container").style.display = "none";
+        // Mostrar la página principal
         document.getElementById("pagina").style.display = "block";
 
+        // Mostrar el campo de entrada para la conjetura del usuario
         guessInput.style.display = 'block';
+        // Mostrar la imagen predeterminada
         defaultImage.style.display = 'block';
+        // Mostrar la imagen azul
         azulImage.style.display = 'block';
+        // Mostrar la imagen roja
         rojoImage.style.display = 'block';
+        // Mostrar la imagen verde
         verdeImage.style.display = 'block';
     }, 2000); // Ocultar el loader después de 2 segundos (2000 milisegundos)
 
+    // Seleccionar elementos HTML por su ID
     var guessInput = document.getElementById('guess-number'); // Campo de entrada para la conjetura del usuario
     var defaultImage = document.getElementById('nave-default'); // Imagen predeterminada
     var azulImage = document.getElementById('azul'); // Imagen para mostrar si la conjetura es demasiado alta
@@ -17,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var verdeImage = document.getElementById('verde'); // Imagen para mostrar si la conjetura es correcta
     var newNumber = document.getElementById('new-number');
 
+    // Ocultar elementos al principio
     guessInput.style.display = 'none';
     defaultImage.style.display = 'none';
     azulImage.style.display = 'none';
@@ -27,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Esta función se ejecutará cuando la ventana haya cargado completamente
 window.onload = function() {
-    // Se obtienen referencias a varios elementos HTML por su ID
+    // Seleccionar elementos HTML por su ID
     var guessInput = document.getElementById('guess-number'); // Campo de entrada para la conjetura del usuario
     var defaultImage = document.getElementById('nave-default'); // Imagen predeterminada
     var azulImage = document.getElementById('azul'); // Imagen para mostrar si la conjetura es demasiado alta

@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess Game</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <link rel="icon" href="/app/static/assets/favicon.ico" type="image/x-icon">
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala de visualización -->
+    <title>Guess Game</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="../static/css/styles.css"> <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="icon" href="/app/static/assets/favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña del navegador -->
 </head>
 <body>
+    <!-- Contenedor del loader -->
     <div id="loader-container">
-        <div id="loader"></div>
+        <div id="loader"></div> <!-- Elemento del loader -->
     </div>
+    <!-- Contenido de la página -->
     <div id="pagina">
-        <audio autoplay loop>
-            <source src="../static/assets/audio-background.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
+        <!-- Reproductor de audio -->
+        <audio autoplay loop> <!-- Reproduce automáticamente y en bucle -->
+            <source src="../static/assets/audio-background.mp3" type="audio/mpeg"> <!-- Fuente de audio -->
         </audio>
+        <!-- Encabezado de la página -->
         <header>
-            <h1> </h1>
+            <h1> </h1> <!-- Título vacío -->
         </header>
+        <!-- Contenedor principal -->
         <div class="container">
+            <!-- Panel lateral -->
             <aside>
+                <!-- Contenido del panel lateral -->
                 <div class="background-content">
+                    <!-- Elementos de puntuación -->
                     <p class="p-score">Score</p>
                     <div class="score">
-                            <p>Acertadas: <span id="acertadas">0</span></p>
-                            <p>Perdidas: <span id="perdidas">0</span></p>
-                            <p>Intentos: <span id="intentos">0</span></p>
-                            <p>Total: <span id="total">0</span></p>
+                            <p>Acertadas: <span id="acertadas">0</span></p> <!-- Puntuación de aciertos -->
+                            <p>Perdidas: <span id="perdidas">0</span></p> <!-- Puntuación de pérdidas -->
+                            <p>Intentos: <span id="intentos">0</span></p> <!-- Contador de intentos -->
+                            <p>Total: <span id="total">0</span></p> <!-- Puntuación total -->
                     </div>
                 </div>
             </aside>
+            <!-- Sección principal -->
             <main>
+                <!-- Contenedor de imágenes -->
                 <div id="images" class="images">
-                    <img src="../static/assets/nave-default.png" id="nave-default" >
-                    <img src="../static/assets/azul.png" id="azul" style="display: none;">
-                    <img src="../static/assets/rojo.png" id="rojo" style="display: none;">
-                    <img src="../static/assets/verde.png" id="verde" style="display: none;">
+                    <!-- Imágenes del juego -->
+                    <img src="../static/assets/nave-default.png" id="nave-default" > <!-- Imagen predeterminada -->
+                    <img src="../static/assets/azul.png" id="azul" style="display: none;"> <!-- Imagen azul (oculta) -->
+                    <img src="../static/assets/rojo.png" id="rojo" style="display: none;"> <!-- Imagen roja (oculta) -->
+                    <img src="../static/assets/verde.png" id="verde" style="display: none;"> <!-- Imagen verde (oculta) -->
                 </div>
-                <!--style="display: none;"-->
+                <!-- Entrada de números -->
                 <input id="guess-number" class="guess-number" maxlength="100" type="number" name="numeros" required="" pattern="[0-9]+" min="0" max="100" placeholder="1-100">
-
+                <!-- Botón para generar un nuevo número -->
                 <button id="new-number" class="new-number">New Number</button>
             </main>
         </div>
     </div>
+    <!-- Pie de página -->
     <footer>
-        <script src="../static/js/script.js"></script>
+        <script src="../static/js/script.js"></script> <!-- Script JavaScript -->
     </footer>
 </body>
 </html>
