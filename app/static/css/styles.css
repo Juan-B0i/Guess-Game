@@ -179,4 +179,72 @@ main {
     letter-spacing: 3px; /* Espaciado entre letras */
     text-transform: uppercase; /* Transformación de texto a mayúsculas */
     text-align: center; /* Alineación del texto */
+} 
+
+@media (max-width: 2720px) {
+    main {
+        margin-left: 225px;
+        margin-top: 200px;
+    }
+
+    #images img {
+        max-width: 200%;
+        height: 1000px;
+        margin-top: 20px;
+    }
+
+    .input-container {
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .guess-number {
+        top: 530px; /* Desde la parte superior */
+        left: 1015px; /* Desde la parte izquierda */
+        width: 250%;
+        max-width: 500px;
+        font-size: 100px;
+        height: 100px;
+    }
+
+    #new-number {
+        top: 530px; /* Desde la parte superior */
+        left: 1015px; /* Desde la parte izquierda */
+        width: 250%;
+        max-width: 500px;
+        font-size: 50px;
+        height: 100px;
+    }
+    @media (max-width: 1440px) {
+        main {
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+    
+        #images img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    
+        .input-container {
+            width: 100%;
+            align-items: center;
+            margin-top: 10px;
+        }
+    
+        .guess-number {
+            width: 90%;
+            max-width: 250px;
+            font-size: 25px;
+        }
+    
+        .new-number {
+            width: 90%;
+            max-width: 250px;
+            font-size: 22px;
+            top: -25px;
+        }
+    }
 }

@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
     azulImage.style.display = 'none';
     rojoImage.style.display = 'none';
     verdeImage.style.display = 'none';
-    newNumber.style.display = 'none';
+
+
 });
 
 // Esta función se ejecutará cuando la ventana haya cargado completamente
